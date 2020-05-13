@@ -1,6 +1,8 @@
+import 'react-app-polyfill/ie9';
+import 'react-app-polyfill/ie11';
+import '@babel/polyfill';
 import React from 'react';
 import './App.css';
-
 import { Epic, EpicMiddleware, createEpicMiddleware } from 'redux-observable';
 import { applyMiddleware, createStore, combineReducers } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';

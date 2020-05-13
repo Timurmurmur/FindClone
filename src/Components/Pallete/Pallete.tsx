@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
-import './Pallete.css';
 import { Card } from '../../common/types';
+import './Pallete.css';
 
 interface IPalleteProps {
     card: Card;
