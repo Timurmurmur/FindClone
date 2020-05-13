@@ -1,0 +1,44 @@
+.pallete_wrapper {
+    perspective: 1000px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.pallete_opened .pallete_front{
+    transform: rotateY(180deg);
+}
+
+.pallete_opened .pallete_back {
+    transform: rotateY(360deg);
+}
+
+
+
+.pallete_front {
+    background-color: rgba(0,0,0,.16);
+}
+
+.pallete_back {
+    transform: rotateY(180deg);
+}
+
+.pallete_back span {
+    color: #fff;
+}
+
+.pallete_back, .pallete_front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+
+
